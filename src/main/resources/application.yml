@@ -1,0 +1,32 @@
+# Configurações para habilitar o console web do H2
+server:
+  port: 8080
+
+spring:
+  application:
+    name: hgtonline
+
+  # Configurações do Liquibase
+  liquibase:
+    enabled: true
+
+  # Configurações de conexão com o banco de dados
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  # Configurações do JPA
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+
+  # Ativa o console web do H2 em /h2-console
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
