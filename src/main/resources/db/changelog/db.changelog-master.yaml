@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: dfsantos
+      changes:
+        - createTable:
+            tableName: glicemia
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: valor
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: data_hora
+                  type: TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: momento_dia
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
