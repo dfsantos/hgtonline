@@ -11,7 +11,7 @@ duas variantes de estrutura de teste unitário:
 Deve seguir o modelo básico de BDD, que é:
 
 - Given / When / Then;
-- Esses blocos podem ser subdividodos em blocos menores com 'And';
+- Esses blocos podem ser subdivididos em blocos menores com 'And';
 
 ### Given
 
