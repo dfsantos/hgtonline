@@ -6,10 +6,6 @@ spring:
   application:
     name: hgtonline
 
-  # Configurações do Liquibase
-  liquibase:
-    enabled: true
-
   # Configurações de conexão com o banco de dados
   datasource:
     url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
