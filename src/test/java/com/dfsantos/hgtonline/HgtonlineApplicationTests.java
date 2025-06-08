@@ -14,6 +14,7 @@ class HgtonlineApplicationTests {
 
     @Test
     void contextLoads() {
-        assertEquals("hgtonline", environment.getProperty("spring.application.name"));
+        assertEquals("hgtonline", environment.getProperty("spring.application.name"), 
+                "The application name should be 'hgtonline' as defined in the environment properties.");
     }
 }
